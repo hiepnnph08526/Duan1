@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nengame"
+    android:orientation="vertical"
+   >
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView"
+        android:layout_below="@+id/linear_top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_question"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tv_quesstion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Câu 1 : Có 10 kg sắt và 10 kg bông . Hỏi cái nào nặng hơn?  "
+                android:textColor="@color/mauchu"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/img_icon"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/img_icon"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_number_quesstion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Câu: 1/200"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_bad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Số lần sai : 3"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:onClick="choitiep"
+                android:id="@+id/btn_a"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="3dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@color/nendapan"
+
+                android:padding="10dp"
+                android:text="Bằng nhau"
+                android:textAllCaps="false"
+                android:textColor="@color/nengame"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_b"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="3dp"
+                android:background="@color/nendapan"
+
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+
+                android:padding="10dp"
+
+                android:text="Không so sánh được"
+                android:textAllCaps="false"
+                android:textColor="@color/nengame"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_c"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="3dp"
+                android:layout_marginLeft="6dp"
+                android:background="@color/nendapan"
+
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+
+                android:padding="10dp"
+
+                android:text="Bông"
+                android:textAllCaps="false"
+                android:textColor="@color/nengame"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:onClick="gameover"
+                android:id="@+id/btn_d"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="3dp"
+                android:background="@color/nendapan"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+
+                android:padding="10dp"
+
+                android:text="Sắt"
+                android:textAllCaps="false"
+                android:textColor="@color/nengame"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
